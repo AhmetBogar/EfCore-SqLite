@@ -28,7 +28,7 @@ namespace EfCoreApp.Migrations
 
                     b.HasKey("KursId");
 
-                    b.ToTable("Kurslar");
+                    b.ToTable("Kurslar", (string)null);
                 });
 
             modelBuilder.Entity("EfCoreApp.Data.KursKayit", b =>
@@ -48,7 +48,7 @@ namespace EfCoreApp.Migrations
 
                     b.HasKey("KayitId");
 
-                    b.ToTable("KursKayitlari");
+                    b.ToTable("KursKayitlari", (string)null);
                 });
 
             modelBuilder.Entity("EfCoreApp.Data.Ogrenci", b =>
@@ -71,7 +71,7 @@ namespace EfCoreApp.Migrations
 
                     b.HasKey("OgrenciId");
 
-                    b.ToTable("Ogrenciler");
+                    b.ToTable("Ogrenciler", (string)null);
                 });
 #pragma warning restore 612, 618
         }
